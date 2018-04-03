@@ -1,0 +1,7 @@
+1) Utilize o padrao strategy para facilitar a insercao de logicas como somar, multiplicar, dividir, ...
+2) Utilize o padrao observer e crie uma lista de pessoas, algumas delas gostam de dar noticias da propria vida, e algumas pessoas 
+gostam de saber da vida das outras.
+3) Crie uma classe para calcular o IMC por faixa etaria (crianca, jovem, adulto e idoso) sua respectiva classe de testes
+4) Crie uma classe Pessoa e crie etapas para que essa pessoa possa realizar atividades diferentes como irParaFaculdade, irParaOTrabalho,
+ limparAcasa; como requisito para cada atividade a criacao de diferentes objetos eh necessaria, utilize o lazyLoad para isso.
+5) Com o singleton, garanta que so existe uma instancia da classe Servidor na sua aplicacao   
