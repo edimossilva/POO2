@@ -1,9 +1,14 @@
 package observer;
 
-public class EnviadorDeEmail {
+public class EnviadorDeEmail implements VendaObserver {
 
-	public void enviarEmail(Venda venda) {
+	private void enviarEmail(Venda venda) {
 		System.out.println("Enviando emial " + venda.getValor());
+	}
+
+	@Override
+	public void reacao(Venda venda) {
+		enviarEmail(venda);
 	}
 
 }

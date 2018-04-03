@@ -1,21 +1,13 @@
-package observer;
-
-import java.util.ArrayList;
-import java.util.List;
+package semobserver;
 
 public class Venda {
 	private float valor;
 	private String nomeLoja;
-	private List<VendaObserver> observadores = new ArrayList<>();
-
-	public void addObservador(VendaObserver vendaObserver) {
-		observadores.add(vendaObserver);
-	}
-
+	
 	public void finalizarVenda() {
-		for (VendaObserver vendaObserver : observadores) {
-			vendaObserver.reacao(this);
-		}
+		new EnviadorDeEmail().enviarEmail(this);
+		new EnviadorDeSMS().enviarSms(this);
+		new ImprimeNotaFIscal().imprimir(this);
 	}
 
 	public float getValor() {
