@@ -1,0 +1,47 @@
+1) Workflow
+1.1) Bugzilla (mudancas de estados)
+
+2) NPJ
+2.1) convenio com defensoria publica
+2.2) alunos em dupla atendem uma pessoa(atendido / parte atendida )
+2.3) alunos supervisionados pelos professores
+2.4) quando os alunos terminanm o atendimento o processo criado(peticao inicial) eh 
+enviado para od efensor publico
+2.5) a peticao eh enviada para o juiz/promotor
+2.6) 
+
+3) estagiarios
+3.1) templates para tipos de peticao
+3.2) 353 alunos (7, 8 e 9)
+3.3) cada dupla atende por dia e turno
+
+4) Sistema
+4.1) estagio 1 (novo processo) cria peticao inicial de acordo com o template - ator aluno em dupla
+4.2) estagio 2 (em elaboracao), anexar documentos - ator dupla
+4.3) (dupla + orientador) = grupo de trabalho
+4.4) algum aluno pode antender sozinho
+4.5) alunos faltam em atendimento
+4.6) cada dupla tem n peticoes
+5.7) estagio 3 (enviado para revisao) - ator professor que realiza a revisao,
+professor vai adicionar comentarios na peticao de acordo com o template, e possiveis comentarios nos anexos (similar docs)
+5.8) timeline com indicadores dos relatorios - identificar quanto tempo alunos e professores demoram para realizar suas atividades
+5.9) loop entre estado 2 e estado 3
+5.10) tabela de auditoria com todas as acoes realizadas pelo usuario
+5.11) estagio 4 (enviar para os defensores- aguardando resposta) 
+5.12) os defensores vao visualizar a lista de peticoes em espera e vao selecionar qual 
+delas eles se tornarao responsaveis
+5.13) o defensor passa a fazer parte do time
+5.14) estagio 5 (revisao )  - ator possiveis defensores
+5.15) estado X (cancelamento do processo) - registro do motivo - pode acontecer a qualquer momento - ator orientador ou cliente
+5.16) quando o aluno quer cancelar ele pede solicitacao
+5.17) estagio 5 (revisao do defensor) ele revisa usando as mesmas funcionalidades que o orientador 
+e envia de volta para o estado 3
+5.18) quando a revisao do defensor chega no orientador ele revisa novamente e envia para os alunos
+5.19) exportar as peticoes em qualquer momento para pdf
+5.20) estado 6 (aprovacao) - imprime para envio - no futuro PJE 
+
+
+
+
+
+

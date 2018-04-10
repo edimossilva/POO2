@@ -1,0 +1,20 @@
+Trabalho POO2 VP1 - 3 pontos
+
+Gerenciador de leilao (com testes) - O maior objetivo desse sistema sao os testes unitarios
+	Entidades:
+	Lance, Produto, Pessoa, Leilao, Evento
+	Funcionalidades:
+	1) cadastrar produtos no evento
+	2) cadastrar pessoas no evento (qtdDinheiroInicial)
+	3) cadastrar leiloes (Produto,precoMinimo)
+	4) selecionar pessoas para o leilao
+	5) rodada de lances do leilao
+	6) qual a pessoa que realizou mais lances
+	7) qual a pessoa que arrematou mais produtos
+	8) qual a pessoa que gastou mais no leilao
+	9) qual a pessoq que gastou menos no leilao
+	10) cada lance deve ser maior que o anterior
+	11) cada lance deve ter uma diferenca minima de 5% do valor inicial do produto
+	12) a mesma pessoa nao pode dar lances seguidos
+	13) se a mesma pessoa arrematar 3 produtos seguidos, lancar mensagem de alerta
+	14) 
