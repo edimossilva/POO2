@@ -10,7 +10,7 @@ public class PessoaParser {
 
 	public Pessoa hashmapToPessoa(HashMap<String, String> pessoaDTO) {
 		String nome = pessoaDTO.get("nome");
-		String dataDeNascimentoString = pessoaDTO.get("nodataDeNascimentome");
+		String dataDeNascimentoString = pessoaDTO.get("dataDeNascimentome");
 		LocalDate dataDeNascimento = converteStringParaData(dataDeNascimentoString);
 
 		return new Pessoa(nome, dataDeNascimento);

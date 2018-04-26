@@ -1,7 +1,6 @@
 package mvc.modelo;
 
 import java.time.LocalDate;
-import java.util.HashMap;
 
 public class Pessoa {
 	private String nome;

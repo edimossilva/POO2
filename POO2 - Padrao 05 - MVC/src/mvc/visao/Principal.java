@@ -43,7 +43,7 @@ public class Principal {
 		return Integer.parseInt(numeroString);
 	}
 
-	private static void exibirOpcoesMenu() {
+	private void exibirOpcoesMenu() {
 		System.out.println("MENU");
 		System.out.println("0 - sair");
 		System.out.println("1 - criar pessoa");
