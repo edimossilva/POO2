@@ -12,10 +12,15 @@ public class BancoDeDadosMemoria implements BancoDeDados {
 		desenhos.add("Swoard art online");
 	}
 
+	public void salvaEmMemoria() {
+		System.out.println("salvou na memoria");
+	}
+
 	@Override
 	public void exibirDesenhos() {
 		System.out.println("\nDesenhos - bdMemoria");
 		desenhos.forEach(System.out::println);
 	}
 
+	
 }

@@ -13,6 +13,10 @@ public class BancoDeDadosTexto implements BancoDeDados {
 		desenhos = arquivoParaArrayDeStrings();
 	}
 
+	public void salvaDuplicado() {
+		System.out.println("SalvouDuplicado");
+	}
+
 	private List<String> arquivoParaArrayDeStrings() {
 		List<String> linhas = new ArrayList<String>();
 
@@ -33,10 +37,11 @@ public class BancoDeDadosTexto implements BancoDeDados {
 		return linhas;
 
 	}
+
 	@Override
 	public void exibirDesenhos() {
 		System.out.println("\nDesenhos - bdTexto");
-		desenhos.forEach(System.out::println);		
+		desenhos.forEach(System.out::println);
 	}
 
 }

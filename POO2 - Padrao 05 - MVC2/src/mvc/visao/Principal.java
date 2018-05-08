@@ -1,7 +1,6 @@
 package mvc.visao;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 import mvc.controle.PessoaControle;
@@ -10,10 +9,6 @@ public class Principal {
 	private Scanner scanner = new Scanner(System.in);
 	private PessoaControle pessoaControle = new PessoaControle();
 
-	public static void main(String[] args) {
-		new Principal().iniciar();
-	}
-
 	public void iniciar() {
 		int opcaoEscolhida;
 		while (true) {
@@ -21,26 +16,11 @@ public class Principal {
 			opcaoEscolhida = getNumeroDigitado();
 			if (opcaoEscolhida == 1) {
 				criarPessoa();
-			} else if (opcaoEscolhida == 2) {
-				listarPessoas();
 			} else if (opcaoEscolhida == 0) {
 				break;
 			}
 		}
 
-	}
-
-	private void listarPessoas() {
-		List<HashMap<String, String>> pessoasHashMap = pessoaControle.getPessoas();
-		for (HashMap<String, String> hashMap : pessoasHashMap) {
-			System.out.println(getPessoasInfo(hashMap));
-		}
-	}
-
-	private String getPessoasInfo(HashMap<String, String> hashMap) {
-		String nome = "Nome: " + hashMap.get("nome");
-		String dataDeNascimento = "Data de Nascimento: " + hashMap.get("dataDeNascimento");
-		return nome + ", " + dataDeNascimento;
 	}
 
 	private void criarPessoa() {
@@ -50,7 +30,7 @@ public class Principal {
 		pessoaDTO.put("nome", nome);
 		pessoaDTO.put("dataDeNascimento", dataDeNascimento);
 		pessoaControle.save(pessoaDTO);
-
+		
 	}
 
 	private String getString(String mensagem) {
@@ -67,6 +47,5 @@ public class Principal {
 		System.out.println("MENU");
 		System.out.println("0 - sair");
 		System.out.println("1 - criar pessoa");
-		System.out.println("2 - listar pessoas");
 	}
 }
