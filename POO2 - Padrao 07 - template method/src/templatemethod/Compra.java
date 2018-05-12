@@ -12,7 +12,7 @@ public abstract class Compra {
 	protected double calcularPreco(Item item) {
 		double totalAdicionais = 0;
 		colocarDescontos();
-		if (naoAtingiuQtdMinima(item)) {
+		if (naoAtingiuValorMinimo(item)) {
 			totalAdicionais = calculaValorAdicionais(valorDescontoMinimo, item.getAdicionais());
 		} else {
 			totalAdicionais = calculaValorAdicionais(valorDescontoMaximo, item.getAdicionais());
@@ -21,8 +21,7 @@ public abstract class Compra {
 	}
 
 	protected abstract double calculaValorAdicionais(double d, List<Adicional> adicionais);
-
-	protected abstract boolean naoAtingiuQtdMinima(Item item);
+	protected abstract boolean naoAtingiuValorMinimo(Item item);
 	protected abstract void colocarDescontos();
 
 	public void exibeValorCompra(Item item) {

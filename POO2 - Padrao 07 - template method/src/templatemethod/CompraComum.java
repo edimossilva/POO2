@@ -17,7 +17,7 @@ public class CompraComum extends Compra {
 	}
 
 	@Override
-	protected boolean naoAtingiuQtdMinima(Item item) {
+	protected boolean naoAtingiuValorMinimo(Item item) {
 		return item.getValor() < 10;
 	}
 
