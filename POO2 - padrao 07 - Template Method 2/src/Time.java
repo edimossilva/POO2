@@ -31,4 +31,8 @@ public class Time {
 		return getStatus().equals(STATUS_JOGO.EMPATANDO);
 	}
 
+	public boolean isPerdendoDeGoleada() {
+		return getStatus().equals(STATUS_JOGO.PERDENDO_DE_GOLEADA);
+	}
+
 }

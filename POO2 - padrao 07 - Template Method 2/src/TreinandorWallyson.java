@@ -27,4 +27,14 @@ public class TreinandorWallyson extends Treinador {
 	protected void atitudeVencendo() {
 		gritoDosVencedores();
 	}
+
+	@Override
+	protected void atitudePerdendoDeGoleada() {
+		gritoDaGoleada();
+	}
+
+	private void gritoDaGoleada() {
+		super.atitudePerdendoDeGoleada();
+		System.out.println("PeloAmorDeGOD");
+	}
 }

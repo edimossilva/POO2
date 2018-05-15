@@ -28,4 +28,10 @@ public class TreinadorIgor extends Treinador {
 	protected void atitudeVencendo() {
 		taFazendoJusAoSalario();
 	}
+
+	@Override
+	protected void atitudePerdendoDeGoleada() {
+		super.atitudePerdendoDeGoleada();
+		System.out.println("lembra da surra pra alemanha");
+	}
 }
