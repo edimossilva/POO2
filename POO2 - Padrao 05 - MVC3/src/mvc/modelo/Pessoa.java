@@ -1,4 +1,3 @@
-
 package mvc.modelo;
 
 import java.time.LocalDate;

@@ -11,17 +11,17 @@ public class JogoCirculo extends Game {
 
 	// Variáveis necessárias para nosso jogo.
 	// Elas armazenam a posição da bola (x,y) e a velocidade que ela anda.
-	int x;
-	int y;
-	int sx;
-	int sy;
+	float x;
+	float y;
+	float sx;
+	float sy;
 
 	public void onLoad() {
 		// Este método é chamado quando o jogo é iniciado.
 		// Aqui damos os valores iniciais para as variáveis.
 		x = 0;
 		y = 0;
-		sx = 1;
+		sx = 1.333333333f;
 		sy = 1;
 	}
 
@@ -36,6 +36,7 @@ public class JogoCirculo extends Game {
 		// fazer a bola se mover na tela, rebatendo nas bordas.
 		x += sx;
 		y += sy;
+		// y += sy;
 		// toda vez que a posição chega em um limite da tela,
 		// a velocidade naquela direção é invertida.
 		if (x < 0 || x > getWidth()) {
@@ -51,6 +52,8 @@ public class JogoCirculo extends Game {
 		// do jogo na tela. É aqui que desenyhamos abola na posição
 		// armazenada nas variáveis.
 		g.setColor(Color.white);
-		g.drawOval(x, y, 10, 10);
+		g.drawOval((int) x, (int) y, 30, 10);
+		// g.fillRect(y, x, y+10, x+10);
+
 	}
 }
