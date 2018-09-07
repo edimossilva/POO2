@@ -1,15 +1,21 @@
 package semsingleton;
 
 public class Principal {
+	static ConexaoDB conexaoDB;
+
 	public static void main(String[] args) {
-
-		Conexao conexao1 = new Conexao();
-		conexao1.conectar();
-		conexao1.desconectar();
-
-		Conexao conexao2 = new Conexao();
-		conexao2.conectar();
-		conexao2.desconectar();
-
+		ConexaoDB conexaoDB2 = getInstancia();
+		ConexaoDB conexaoDB3 = getInstancia();
+		System.out.println(conexaoDB2);
+		System.out.println(conexaoDB3);
 	}
+
+	private static ConexaoDB getInstancia() {
+		if (conexaoDB == null) {
+			conexaoDB = new ConexaoDB();
+			return conexaoDB;
+		}
+		return conexaoDB;
+	}
+
 }

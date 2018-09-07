@@ -9,12 +9,12 @@ public class Soldado {
 	private Pistola pistola = new Pistola();
 	private Metralhadora metralhadora = new Metralhadora();
 
-	public void atirarComMetralhadora() {
-		metralhadora.atirar();
-	}
-
 	public void atirarComPistola() {
 		pistola.atirar();
+	}
+
+	public void atirarComMetralhadora() {
+		metralhadora.atirar();
 	}
 
 	public void atirarComBazuca() {
