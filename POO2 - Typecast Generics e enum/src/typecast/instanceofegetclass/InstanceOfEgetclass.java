@@ -2,7 +2,7 @@ package typecast.instanceofegetclass;
 
 public class InstanceOfEgetclass {
 	public static void main(String[] args) {
-		Object a = "palavra";
+		Object a = "palavara";
 		if (a.getClass() == String.class) {
 			System.out.println("getclass 1");
 		}

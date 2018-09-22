@@ -14,7 +14,6 @@ public class Classes {
 		Object obj = "minha string";
 
 		Tv tv = (Tv) obj;
-
 		System.out.println(tv);
 
 	}
