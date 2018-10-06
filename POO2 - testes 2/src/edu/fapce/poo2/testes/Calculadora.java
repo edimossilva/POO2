@@ -39,8 +39,8 @@ public class Calculadora {
 		return sum;
 	}
 
-	// 1 = serah feito o fatorial do menor numero
-	// 2 = se o maior numero for maior que o dobro do primeiro numero, dobre o 1
+	// 1 = serah feito o fatorial do menor numero e somatorio do maior
+	// 2 = se o maior numero for maior que o dobro do menor numero, dobre o menor
 	// numero
 	// 3 = se os numeros forem iguais e positivos, retorne a soma do fatoriais
 	// 4 = se os numeros forem iguais e negativos, retorne a soma dos somatorios
